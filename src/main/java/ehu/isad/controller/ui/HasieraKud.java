@@ -9,6 +9,12 @@ public class HasieraKud implements Initializable {
 
     private Main mainApp;
 
+    private static HasieraKud instantzia = new HasieraKud();
+
+    public static HasieraKud getInstantzia() {
+        return instantzia;
+    }
+
 
 
     public void setMainApp(Main main) {

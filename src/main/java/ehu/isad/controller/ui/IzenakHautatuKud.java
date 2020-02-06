@@ -9,7 +9,11 @@ public class IzenakHautatuKud implements Initializable {
 
     private Main mainApp;
 
+    private static IzenakHautatuKud instantzia = new IzenakHautatuKud();
 
+    public static IzenakHautatuKud getInstantzia() {
+        return instantzia;
+    }
 
     public void setMainApp(Main main) {
         this.mainApp = main;
