@@ -2,6 +2,7 @@ package ehu.isad;
 
 import ehu.isad.controller.ui.HasieraKud;
 import ehu.isad.controller.ui.IzenakHautatuKud;
+import ehu.isad.controller.ui.TableroaKud;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,11 +15,13 @@ public class Main extends Application {
 
   private Parent hasiera;
   private Parent izenakHautatu;
+  private Parent tableroa;
 
   private Stage stage;
 
   private HasieraKud hasieraKud;
   private IzenakHautatuKud izenakHautatuKud;
+  private TableroaKud tableroaKud;
 
 
   @Override
@@ -27,13 +30,13 @@ public class Main extends Application {
     pantailakKargatu();
 
     stage.setTitle("Conecta4");
-    stage.setScene(new Scene(hasiera));
+    stage.setScene(new Scene(tableroa));
     stage.show();
   }
 
   private void pantailakKargatu() throws IOException {
 
-    FXMLLoader loaderHasiera = new FXMLLoader(getClass().getResource("/view/hasiera.fxml"));
+    /*FXMLLoader loaderHasiera = new FXMLLoader(getClass().getResource("/view/hasiera.fxml"));
     hasiera = (Parent) loaderHasiera.load();
     hasieraKud = loaderHasiera.getController();
     hasieraKud.setMainApp(this);
@@ -41,8 +44,12 @@ public class Main extends Application {
     FXMLLoader loaderIzenakHautatu = new FXMLLoader(getClass().getResource("/view/izenakHautatu.fxml"));
     izenakHautatu = (Parent) loaderIzenakHautatu.load();
     izenakHautatuKud = loaderIzenakHautatu.getController();
-    izenakHautatuKud.setMainApp(this);
+    izenakHautatuKud.setMainApp(this);*/
 
+    FXMLLoader loaderTablero = new FXMLLoader(getClass().getResource("/view/tableroa.fxml"));
+    tableroa = (Parent) loaderTablero.load();
+    tableroaKud = loaderTablero.getController();
+    tableroaKud.setMainApp(this);
   }
 
 
