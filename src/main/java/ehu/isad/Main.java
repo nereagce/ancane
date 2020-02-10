@@ -7,6 +7,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -30,13 +31,13 @@ public class Main extends Application {
     pantailakKargatu();
 
     stage.setTitle("Conecta4");
-    stage.setScene(new Scene(tableroa));
+    stage.setScene(new Scene(hasiera));
     stage.show();
   }
 
   private void pantailakKargatu() throws IOException {
 
-    /*FXMLLoader loaderHasiera = new FXMLLoader(getClass().getResource("/view/hasiera.fxml"));
+    FXMLLoader loaderHasiera = new FXMLLoader(getClass().getResource("/view/hasiera.fxml"));
     hasiera = (Parent) loaderHasiera.load();
     hasieraKud = loaderHasiera.getController();
     hasieraKud.setMainApp(this);
@@ -44,7 +45,7 @@ public class Main extends Application {
     FXMLLoader loaderIzenakHautatu = new FXMLLoader(getClass().getResource("/view/izenakHautatu.fxml"));
     izenakHautatu = (Parent) loaderIzenakHautatu.load();
     izenakHautatuKud = loaderIzenakHautatu.getController();
-    izenakHautatuKud.setMainApp(this);*/
+    izenakHautatuKud.setMainApp(this);
 
     FXMLLoader loaderTablero = new FXMLLoader(getClass().getResource("/view/tableroa.fxml"));
     tableroa = (Parent) loaderTablero.load();
@@ -56,6 +57,21 @@ public class Main extends Application {
   public static void main(String[] args) {
     launch(args);
   }
+
+  public void izenakHautatuKargatu(){
+      Parent root = new AnchorPane(izenakHautatu);
+      stage.setScene(new Scene(root));
+      stage.show();
+
+  }
+
+  public void tableroaKargatu(String j1,String j2){
+      Parent root = new AnchorPane(tableroa);
+      tableroaKud.jokalariaEzarri(j1,j2);
+      stage.setScene(new Scene(root));
+      stage.show();
+    }
+
 
 
 

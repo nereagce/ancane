@@ -1,6 +1,7 @@
 package ehu.isad.controller.ui;
 
 import ehu.isad.Main;
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,4 +29,7 @@ public class HasieraKud implements Initializable {
 
     }
 
+    public void biJok(ActionEvent actionEvent) {
+        mainApp.izenakHautatuKargatu();
+    }
 }

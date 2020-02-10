@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="500.0" styleClass="background" stylesheets="@../css/ancane.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="500.0" styleClass="background" stylesheets="@../css/ancane.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehu.isad.controller.ui.IzenakHautatuKud">
    <children>
       <Label layoutX="168.0" layoutY="38.0" text="2 Jokalari">
          <font>
@@ -16,8 +16,8 @@
       <Label layoutX="60.0" layoutY="110.0" text="Datuak sartu:" />
       <Label layoutX="104.0" layoutY="157.0" text="1 Jokalariaren izena:" />
       <Label layoutX="104.0" layoutY="209.0" text="2 Jokalariaren izena:" />
-      <Button layoutX="232.0" layoutY="271.0" mnemonicParsing="false" text="OK" />
-      <TextField layoutX="260.0" layoutY="152.0" />
-      <TextField layoutX="258.0" layoutY="204.0" />
+      <Button layoutX="232.0" layoutY="271.0" mnemonicParsing="false" onAction="#ok" text="OK" />
+      <TextField fx:id="jokalariBat" layoutX="260.0" layoutY="152.0" />
+      <TextField fx:id="jokalariBi" layoutX="258.0" layoutY="204.0" />
    </children>
 </AnchorPane>

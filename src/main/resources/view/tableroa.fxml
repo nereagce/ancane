@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehu.isad.controller.ui.TableroaKud">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehu.isad.controller.ui.TableroaKud">
    <children>
-      <GridPane fx:id="grid" gridLinesVisible="true" layoutX="24.0" layoutY="121.0" prefHeight="258.0" prefWidth="560.0">
+      <GridPane fx:id="grid" gridLinesVisible="true" layoutX="24.0" layoutY="121.0" prefHeight="450.0" prefWidth="560.0" style="-fx-background-color: withe;">
         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="99.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -23,81 +24,109 @@
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="77.0" minHeight="0.0" prefHeight="26.333343505859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fx:id="k32" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <ImageView fx:id="k01" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
-            <ImageView fx:id="k31" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <ImageView fx:id="k30" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <ImageView fx:id="k25" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <ImageView fx:id="k24" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <ImageView fx:id="k23" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <ImageView fx:id="k22" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <ImageView fx:id="k21" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <ImageView fx:id="k20" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <ImageView fx:id="k15" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <ImageView fx:id="k14" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <ImageView fx:id="k13" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <ImageView fx:id="k12" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <ImageView fx:id="k11" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <ImageView fx:id="k10" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <ImageView fx:id="k05" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6" />
-            <ImageView fx:id="k04" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5" />
-            <ImageView fx:id="k02" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
-            <ImageView fx:id="k03" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4" />
-            <ImageView fx:id="k43" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <ImageView fx:id="k42" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <ImageView fx:id="k41" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <ImageView fx:id="k40" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <ImageView fx:id="k35" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <ImageView fx:id="k34" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <ImageView fx:id="k33" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <ImageView fx:id="k71" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <ImageView fx:id="k72" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-            <ImageView fx:id="k73" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-            <ImageView fx:id="k74" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-            <ImageView fx:id="k75" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
-            <ImageView fx:id="k85" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6" />
-            <ImageView fx:id="k84" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5" />
-            <ImageView fx:id="k83" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4" />
-            <ImageView fx:id="k82" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3" />
-            <ImageView fx:id="k81" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-            <ImageView fx:id="k80" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <ImageView fx:id="k53" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-            <ImageView fx:id="k54" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-            <ImageView fx:id="k55" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-            <ImageView fx:id="k45" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <ImageView fx:id="k44" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <ImageView fx:id="k61" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-            <ImageView fx:id="k62" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <ImageView fx:id="k63" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-            <ImageView fx:id="k64" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-            <ImageView fx:id="k65" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-            <ImageView fx:id="k70" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <ImageView fx:id="k00" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
-            <ImageView fx:id="k50" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <ImageView fx:id="k51" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <ImageView fx:id="k52" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <ImageView fx:id="k60" fitHeight="38.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-            <Button fx:id="b0" mnemonicParsing="false" onAction="#b8" prefHeight="37.0" prefWidth="71.0" GridPane.columnIndex="8" />
-            <Button fx:id="b01" mnemonicParsing="false" onAction="#b1" prefHeight="44.0" prefWidth="61.0" GridPane.columnIndex="1" />
-            <Button fx:id="b02" mnemonicParsing="false" onAction="#b7" prefHeight="37.0" prefWidth="72.0" GridPane.columnIndex="7" />
-            <Button fx:id="b03" mnemonicParsing="false" onAction="#b6" prefHeight="44.0" prefWidth="61.0" GridPane.columnIndex="6" />
-            <Button fx:id="b04" mnemonicParsing="false" onAction="#b5" prefHeight="44.0" prefWidth="61.0" GridPane.columnIndex="5" />
-            <Button fx:id="b05" mnemonicParsing="false" onAction="#b4" prefHeight="44.0" prefWidth="61.0" GridPane.columnIndex="4" />
-            <Button fx:id="b06" mnemonicParsing="false" onAction="#b3" prefHeight="44.0" prefWidth="61.0" GridPane.columnIndex="3" />
-            <Button fx:id="b07" mnemonicParsing="false" onAction="#b2" prefHeight="44.0" prefWidth="61.0" GridPane.columnIndex="2" />
-            <Button fx:id="b08" mnemonicParsing="false" onAction="#b0" prefHeight="44.0" prefWidth="61.0" />
+            <Button fx:id="b0" mnemonicParsing="false" onAction="#b8" prefHeight="37.0" prefWidth="71.0" GridPane.columnIndex="8">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+            <Button fx:id="b01" mnemonicParsing="false" onAction="#b1" prefHeight="125.0" prefWidth="62.0" GridPane.columnIndex="1">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+            <Button fx:id="b02" mnemonicParsing="false" onAction="#b7" prefHeight="37.0" prefWidth="72.0" GridPane.columnIndex="7">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+            <Button fx:id="b03" mnemonicParsing="false" onAction="#b6" prefHeight="37.0" prefWidth="69.0" GridPane.columnIndex="6">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+            <Button fx:id="b04" mnemonicParsing="false" onAction="#b5" prefHeight="37.0" prefWidth="67.0" GridPane.columnIndex="5">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+            <Button fx:id="b05" mnemonicParsing="false" onAction="#b4" prefHeight="37.0" prefWidth="67.0" GridPane.columnIndex="4">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+            <Button fx:id="b06" mnemonicParsing="false" onAction="#b3" prefHeight="37.0" prefWidth="65.0" GridPane.columnIndex="3">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+            <Button fx:id="b07" mnemonicParsing="false" onAction="#b2" prefHeight="37.0" prefWidth="68.0" GridPane.columnIndex="2">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+            <Button fx:id="b08" mnemonicParsing="false" onAction="#b0" prefHeight="105.0" prefWidth="62.0">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Circle fx:id="k00" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+            <Circle fx:id="k01" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="2" />
+            <Circle fx:id="k02" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="3" />
+            <Circle fx:id="k03" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="4" />
+            <Circle fx:id="k04" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="5" />
+            <Circle fx:id="k05" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="6" />
+            <Circle fx:id="k10" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Circle fx:id="k11" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Circle fx:id="k12" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Circle fx:id="k13" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Circle fx:id="k14" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Circle fx:id="k15" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Circle fx:id="k20" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Circle fx:id="k21" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Circle fx:id="k22" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Circle fx:id="k23" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Circle fx:id="k30" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Circle fx:id="k40" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Circle fx:id="k50" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Circle fx:id="k60" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Circle fx:id="k70" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Circle fx:id="k80" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Circle fx:id="k31" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Circle fx:id="k32" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Circle fx:id="k41" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Circle fx:id="k51" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Circle fx:id="k61" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Circle fx:id="k53" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Circle fx:id="k45" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Circle fx:id="k44" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Circle fx:id="k43" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Circle fx:id="k35" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Circle fx:id="k34" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Circle fx:id="k25" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Circle fx:id="k24" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Circle fx:id="k33" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Circle fx:id="k72" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Circle fx:id="k82" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Circle fx:id="k62" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Circle fx:id="k52" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Circle fx:id="k42" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Circle fx:id="k81" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Circle fx:id="k71" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Circle fx:id="k55" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Circle fx:id="k84" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Circle fx:id="k74" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Circle fx:id="k64" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Circle fx:id="k54" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Circle fx:id="k83" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Circle fx:id="k73" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Circle fx:id="k63" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Circle fx:id="k85" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Circle fx:id="k75" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Circle fx:id="k65" fill="#f5f5f5" radius="30.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="6" />
          </children>
       </GridPane>
-      <Label layoutX="469.0" layoutY="33.0" text="zure txanda da" />
-      <Label fx:id="jokalariTxanda" layoutX="387.0" layoutY="33.0" text="Label" />
+      <Label layoutX="469.0" layoutY="42.0" text="zure txanda da" />
+      <Label fx:id="jokalariTxanda" layoutX="412.0" layoutY="42.0" text="Label" />
    </children>
 </AnchorPane>

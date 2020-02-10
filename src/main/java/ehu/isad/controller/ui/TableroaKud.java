@@ -8,6 +8,8 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -22,125 +24,128 @@ public class TableroaKud implements Initializable {
     private static boolean[][] tableroa;
 
     @FXML
-    private ImageView k00; //columna,linea
+    private Circle k00; //columna,linea
     @FXML
-    private ImageView k01;
+    private Circle k01;
     @FXML
-    private ImageView k02;
+    private Circle k02;
     @FXML
-    private ImageView k03;
+    private Circle k03;
     @FXML
-    private ImageView k04;
+    private Circle k04;
     @FXML
-    private ImageView k05;
+    private Circle k05;
 
     @FXML
-    private ImageView k10; //columna,linea
+    private Circle k10; //columna,linea
     @FXML
-    private ImageView k11;
+    private Circle k11;
     @FXML
-    private ImageView k12;
+    private Circle k12;
     @FXML
-    private ImageView k13;
+    private Circle k13;
     @FXML
-    private ImageView k14;
+    private Circle k14;
     @FXML
-    private ImageView k15;
+    private Circle k15;
 
     @FXML
-    private ImageView k20; //columna,linea
+    private Circle k20; //columna,linea
     @FXML
-    private ImageView k21;
+    private Circle k21;
     @FXML
-    private ImageView k22;
+    private Circle k22;
     @FXML
-    private ImageView k23;
+    private Circle k23;
     @FXML
-    private ImageView k24;
+    private Circle k24;
     @FXML
-    private ImageView k25;
+    private Circle k25;
 
     @FXML
-    private ImageView k30; //columna,linea
+    private Circle k30; //columna,linea
     @FXML
-    private ImageView k31;
+    private Circle k31;
     @FXML
-    private ImageView k32;
+    private Circle k32;
     @FXML
-    private ImageView k33;
+    private Circle k33;
     @FXML
-    private ImageView k34;
+    private Circle k34;
     @FXML
-    private ImageView k35;
+    private Circle k35;
 
     @FXML
-    private ImageView k40; //columna,linea
+    private Circle k40; //columna,linea
     @FXML
-    private ImageView k41;
+    private Circle k41;
     @FXML
-    private ImageView k42;
+    private Circle k42;
     @FXML
-    private ImageView k43;
+    private Circle k43;
     @FXML
-    private ImageView k44;
+    private Circle k44;
     @FXML
-    private ImageView k45;
+    private Circle k45;
 
     @FXML
-    private ImageView k50; //columna,linea
+    private Circle k50; //columna,linea
     @FXML
-    private ImageView k51;
+    private Circle k51;
     @FXML
-    private ImageView k52;
+    private Circle k52;
     @FXML
-    private ImageView k53;
+    private Circle k53;
     @FXML
-    private ImageView k54;
+    private Circle k54;
     @FXML
-    private ImageView k55;
+    private Circle k55;
 
     @FXML
-    private ImageView k60; //columna,linea
+    private Circle k60; //columna,linea
     @FXML
-    private ImageView k61;
+    private Circle k61;
     @FXML
-    private ImageView k62;
+    private Circle k62;
     @FXML
-    private ImageView k63;
+    private Circle k63;
     @FXML
-    private ImageView k64;
+    private Circle k64;
     @FXML
-    private ImageView k65;
+    private Circle k65;
 
     @FXML
-    private ImageView k70; //columna,linea
+    private Circle k70; //columna,linea
     @FXML
-    private ImageView k71;
+    private Circle k71;
     @FXML
-    private ImageView k72;
+    private Circle k72;
     @FXML
-    private ImageView k73;
+    private Circle k73;
     @FXML
-    private ImageView k74;
+    private Circle k74;
     @FXML
-    private ImageView k75;
+    private Circle k75;
 
     @FXML
-    private ImageView k80; //columna,linea
+    private Circle k80; //columna,linea
     @FXML
-    private ImageView k81;
+    private Circle k81;
     @FXML
-    private ImageView k82;
+    private Circle k82;
     @FXML
-    private ImageView k83;
+    private Circle k83;
     @FXML
-    private ImageView k84;
+    private Circle k84;
     @FXML
-    private ImageView k85;
+    private Circle k85;
 
 
     @FXML
     private Label jokalariTxanda;
+
+    private String jok1;
+    private String jok2;
 
 
     public void setMainApp(Main main) {
@@ -153,7 +158,6 @@ public class TableroaKud implements Initializable {
 
         //metodo de get izena del primero y del segundo
 
-        jokalariTxanda.setText("lehenengoa");//nombre del primero
         jokalaria = 1;
         tableroa = new boolean[9][6];
         for (int i=0;i<tableroa.length;i++){
@@ -167,16 +171,23 @@ public class TableroaKud implements Initializable {
 
     }
 
-    public void fitxaSartu(ImageView kasilla) { //int zutabea pasar
+    public void jokalariaEzarri(String j1,String j2){
+        jok1 = j1;
+        jok2 = j2;
+        jokalariTxanda.setText(j1);
+
+    }
+
+    public void fitxaSartu(Circle kasilla) {
 
         if (jokalaria == 1) {
-            kasilla.setImage(new Image("/irudiak/rojo.png"));
+            kasilla.setFill(Color.RED);
             jokalaria++;
-            jokalariTxanda.setText("bigarrena");
+            jokalariTxanda.setText(jok2);
         } else {
-            kasilla.setImage(new Image("/irudiak/azul.jpg"));
+            kasilla.setFill(Color.BLUE);
             jokalaria--;
-            jokalariTxanda.setText("lehenengoa");
+            jokalariTxanda.setText(jok1);
         }
     }
 
