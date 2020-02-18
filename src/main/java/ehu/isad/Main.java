@@ -58,20 +58,21 @@ public class Main extends Application {
     launch(args);
   }
 
-  public void izenakHautatuKargatu(){
-      Parent root = new AnchorPane(izenakHautatu);
-      stage.setScene(new Scene(root));
-      stage.show();
+  public void izenakHautatuKargatu(String nondik){
+    Parent root = new AnchorPane(izenakHautatu);
+    izenakHautatuKud.hasieratu(nondik);
+    stage.setScene(new Scene(root));
+    stage.show();
+
 
   }
 
-  public void tableroaKargatu(String j1,String j2){
-      Parent root = new AnchorPane(tableroa);
-      tableroaKud.jokalariaEzarri(j1,j2);
-      stage.setScene(new Scene(root));
-      stage.show();
-    }
-
+  public void tableroaKargatu(String j1,String j2,String nondik){
+    Parent root = new AnchorPane(tableroa);
+    tableroaKud.hasieratu(j1,j2,nondik);
+    stage.setScene(new Scene(root));
+    stage.show();
+  }
 
 
 

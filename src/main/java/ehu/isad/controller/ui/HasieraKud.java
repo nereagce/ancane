@@ -30,6 +30,19 @@ public class HasieraKud implements Initializable {
     }
 
     public void biJok(ActionEvent actionEvent) {
-        mainApp.izenakHautatuKargatu();
+        mainApp.izenakHautatuKargatu("BiJok");
     }
+
+    public void JOErraza(ActionEvent actionEvent) {
+        mainApp.izenakHautatuKargatu("JOErraza");
+    }
+
+    public void JOZaila(ActionEvent actionEvent) {
+        mainApp.izenakHautatuKargatu("JOZaila");
+    }
+
+
+
+
+
 }
